@@ -91,7 +91,7 @@ export default function Hero() {
           <path id="topCirclePath" d="M 20 40 A 30 30 0 0 1 80 40" fill="none" />
           <motion.text
             fontSize="5"
-            fill="white"
+            fill="rgba(220, 38, 38, 1)"
             opacity="0.7"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -106,7 +106,7 @@ export default function Hero() {
           <path id="bottomLeftCirclePath" d="M 10 55 A 30 30 0 0 0 40 85" fill="none" />
           <motion.text
             fontSize="5"
-            fill="white"
+            fill="rgba(247, 220, 111, 1)"
             opacity="0.7"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -121,7 +121,7 @@ export default function Hero() {
           <path id="bottomRightCirclePath" d="M 60 85 A 30 30 0 0 0 90 55" fill="none" />
           <motion.text
             fontSize="5"
-            fill="white"
+            fill="rgba(255, 105, 180, 1)"
             opacity="0.7"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
