@@ -59,7 +59,7 @@ const DataForm = () => {
         render={({ field }) => (
           <FormItem>
             <FormControl>
-              <Input className='bg-white w-[300px]' placeholder="Your Email Address" {...field} />
+              <Input className='bg-white w-[350px] tablet:w-[400px] laptop:w-[300px]' placeholder="Your Email Address" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>

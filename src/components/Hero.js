@@ -38,7 +38,7 @@ export default function Hero() {
 
       {/* Bottom line */}
       <motion.div
-        className="absolute bottom-0 left-1/2 h-[calc(50%-28vmin)] w-0.5 bg-white origin-bottom"
+        className="absolute bottom-20 laptop:bottom-0 left-1/2 h-[calc(40%-28vmin)] laptop:h-[calc(50%-28vmin)] w-0.5 bg-white origin-bottom"
         variants={lineVariants}
         initial="hidden"
         animate="visible"

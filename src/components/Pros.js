@@ -8,7 +8,7 @@ import {
 
 const Pros = () => {
   return (
-    <Accordion type="single" collapsible className="w-full px-10 tablet:px-20 laptop:px-0 laptop:w-[400px] text-white">
+    <Accordion type="single" collapsible className="w-full laptop:px-0 laptop:w-[350px] text-white">
       <AccordionItem value="item-1">
         <AccordionTrigger>Would this really free up my time?</AccordionTrigger>
         <AccordionContent>

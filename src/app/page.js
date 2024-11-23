@@ -15,7 +15,7 @@ const page = () => {
     <section className="flex flex-col relative w-full h-screen overflow-hidden">
       <div 
         ref={ref}
-        className="mt-14 -mb-32 text-white flex flex-col gap-2 justify-center items-center"
+        className="mt-28 tablet:mt-20 laptop:mt-14 text-white flex flex-col gap-2 justify-center items-center"
       >
         <motion.span 
           className="text-xl tablet:text-2xl laptop:text-3xl font-semibold bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent bg-clip-text"
@@ -49,12 +49,13 @@ const page = () => {
         <Pros />
       </div>
     </section>
-    <section className="pb-10 laptop:pb-0">
+    <section className="-mt-12 pb-10 px-10">
       <div className="laptop:hidden flex flex-col justify-between items-center">
-        <div className="w-full tablet:w-[450px] text-white px-20 tablet:px-0 py-4 text-center">
-          Get a personalized K.I.S.S formula for your business automation success. Enter your email below
+        <div className="w-full text-white tablet:px-0 py-4 text-center">
+          Get a personalized K.I.S.S formula for your business automation success.<br />Enter your email below
         </div>
-        <DataForm />
+
+          <DataForm />
       </div>
 
       <div className="laptop:hidden flex flex-col justify-between items-center mt-10">
