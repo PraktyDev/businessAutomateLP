@@ -34,10 +34,11 @@ const DataForm = () => {
       const { isDirty, isValid, isSubmitting, isSubmitSuccessful } = form.formState
      
       const onSubmit = async (values) => {
-        const scriptURL = `https://script.google.com/macros/s/AKfycbyxXGmM3Ok0wZx5NpAwgNHBKjI-GypHx8cTVJ9BByrMr4jpG1kfeNM2YZR2fOOEyx6mqQ/exec`
+        const scriptURL = `https://script.google.com/macros/s/AKfycbz7OD2u7cSXkhbxIyYecw9wVRCy4cOapNbYh9bXsYxbkPrVTCB6RZf8J9N4mmR2lJV6Mg/exec`
 
         try {
-          await axios.post(scriptURL, values, { headers: { "Content-Type": "application/json" } })
+          const formData = new URLSearchParams(values).toString()
+          await axios.post(scriptURL, formData, { headers: { "Content-Type": "application/x-www-form-urlencoded" }, mode: 'no-cors' })
           toast('Requested Successfully')
         } catch (error) {
           toast("Request failed, try again later")

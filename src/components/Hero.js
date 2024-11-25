@@ -38,12 +38,12 @@ export default function Hero() {
 
       {/* Bottom line */}
       <motion.div
-        className="absolute bottom-20 laptop:bottom-0 left-1/2 h-[calc(40%-28vmin)] laptop:h-[calc(50%-28vmin)] w-0.5 bg-white origin-bottom"
+        className="absolute bottom-[150px] tablet:bottom-[120px] laptop:bottom-0 left-1/2 h-[calc(30%-28vmin)] tablet:h-[calc(45%-40vmin)]  laptop:h-[calc(50%-28vmin)] w-0.5 bg-white origin-bottom"
         variants={lineVariants}
         initial="hidden"
         animate="visible"
       >
-        <span className="absolute -left-3 bottom-10 text-white text-sm whitespace-nowrap transform rotate-90">Rebuild</span>
+        <span className="absolute -left-3 bottom-5 tablet:bottom-3 laptop:bottom-5 text-white text-sm whitespace-nowrap transform rotate-90">Rebuild</span>
       </motion.div>
 
       {/* Overlapping circles and moving text */}
