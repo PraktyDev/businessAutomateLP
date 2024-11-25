@@ -53,7 +53,7 @@ const DataForm = () => {
 
   return (
     <Form {...form}>
-    <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col items-center gap-3">
+    <form onSubmit={form.handleSubmit(onSubmit)} className="z-50 flex flex-col items-center gap-3">
       <FormField
         control={form.control}
         name="email"

@@ -37,7 +37,7 @@ const page = () => {
       </div>
 
       <Hero />
-      <div className="hidden laptop:flex flex-col justify-between items-center laptop:absolute laptop:bottom-10 laptop:right-16">
+      <div className="z-10 hidden laptop:flex flex-col justify-between items-center laptop:absolute laptop:bottom-10 laptop:right-16">
         <div className="w-[300px] text-white py-4 text-justify">
           Get a personalized K.I.S.S formula for your business automation success. Enter your email below
         </div>
